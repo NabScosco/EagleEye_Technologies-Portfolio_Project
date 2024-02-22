@@ -8,9 +8,9 @@ Welcome to EagleEye, a cutting-edge project dedicated to revolutionizing workfor
 
 Explore the live project on [EagleEye Demo](https://eagleeye-demo.com).
 
-Read the comprehensive project journey in the [Final Project Blog Article](link-to-your-blog-article).
+Read the comprehensive project journey in the [Final Project Blog Article](https://medium.com/@kingsley.asaam/revolutionizing-workforce-monitoring-with-eagleeye-a-solo-endeavor-8456a4cc5cce).
 
-Connect with the developer, Kingsley Fynn Asaam, on [LinkedIn](https://www.linkedin.com/in/kingsleyfynnsaam/).
+Connect with the developer, Kingsley Fynn Asaam, on [LinkedIn](https://www.linkedin.com/posts/kingsley-asaam-31037b86_revolutionizing-workforce-monitoring-with-activity-7166296100415467520-NqDa?utm_source=share&utm_medium=member_desktop).
 
 ## Installation
 
