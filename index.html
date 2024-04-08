@@ -1,160 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EagleEye Technologies</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/f23ce3b67a.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div id="header">
-    <div class="container">
-      <nav>
-        <img src="images/logo-2.png" alt="logo">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">SignUp</a></li>
-        </ul>
-      </nav>
-      <div class="header-text">
-        <p>Job Monitoring</p>
-        <h1>Hello! <br> Welcome To <span>EagleEye Inc.</span></h1>
-      </div>
-    </div>
-  </div>
-  <!-- ----------------About----------------- -->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="images/rsz_eagleeyetech.jpg">
-        </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">About EagleEye Technologies</h1> <br>
-          <p>
-            Welcome to Eagle Eye Technologies, where innovation converges with global workforce management.
-            In an era of seamless connectivity, Eagle Eye Technologies empowers business owners to monitor
-            and optimize their teams, regardless of geographical boundaries.
-          </p>
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('mission')">Our Mission</p>
-            <p class="tab-links" onclick="opentab('vission')">Our Vision</p>
-            <p class="tab-links" onclick="opentab('uniqueness')">Our Uniqueness</p>
-            <p class="tab-links" onclick="opentab('reliability')">Reliability</p>
-          </div>
-          <div class="tab-contents active-tab" id="mission">
-            <h3 class="h3-blue">Mission Statement</h3>
-            <br> 
-            <p>
-              At Eagle Eye Technologies, our mission is to redefine the way businesses connect with their workforce.
-              We strive to provide forward-thinking solutions that transcend borders,
-              offering business owners and managers the tools they need to enhance productivity and drive success.
-            </p>
-          </div>
-          <div class="tab-contents" id="vission">
-            <h3 class="h3-blue">Who We Are</h3>
-            <br>
-            <p>
-            Eagle Eye Technologies stands as a trailblazing tech company specializing in cutting-edge remote
-            workforce management solutions. Our commitment to simplicity, reliability,
-            and advanced technology ensures that businesses of all sizes can effectively navigate
-            the challenges of modern team management.
-            </p>
-          </div>
-          <div class="tab-contents" id="uniqueness">
-            <h3 class="h3-blue">What Sets Us Apart</h3>
-            <br>
-            <ul>
-              <li><span class="bolden">Global Accessibility:</span> Eagle Eye Technologies enables business owners to monitor their
-                teams from anywhere worldwide, fostering collaboration without limits.
-              </li><br>
-              <li><span class="bolden">Real-Time Insights:</span> Stay ahead with real-time data and analytics,
-                enabling informed decision-making on the fly.
-              </li><br>
-              <li><span class="bolden">User-Friendly Interface:</span> Our intuitive platform ensures that both technical
-                and non-technical users can navigate effortlessly.
-              </li><br>
-              <li><span class="bolden">Scalability:</span> Whether you're a startup or a multinational enterprise,
-                Eagle Eye Technologies provides scalable solutions to meet your evolving business needs.
-              </li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="reliability">
-            <h3 class="h3-blue">What Sets Us Apart</h3>
-            <br>
-            <p>
-              Efficient workforce management is at the core of successful businesses.
-              By choosing Eagle Eye Technologies, you're choosing a dedicated partner
-              committed to helping you streamline operations, boost productivity,
-              and navigate the future of work with confidence.
-              <br><br>
-              Embark on a journey to redefine how you manage your teams.
-              Experience the power of connectivity, efficiency, and innovation with Eagle Eye Technologies.
-              <br><br>
-              Welcome to the future of workforce management!
-            </p>
-          </div>          
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>EagleEye Technologies</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f23ce3b67a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="images/logo-2.png"
+            alt="logo"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Sign In</a></li>
+            <i
+              class="fa-solid fa-xmark"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i
+            class="fa-solid fa-bars"
+            onclick="openmenu()"
+          ></i>
+        </nav>
+        <div class="header-text">
+          <p>Job Monitoring</p>
+          <h1>
+            Hello! <br />
+            Welcome To <span>EagleEye Inc.</span>
+          </h1>
         </div>
       </div>
     </div>
-  </div>
-  <!-- -----------------------Services------------ -->
-  <div id="services">
-    <div class="container">
-      <h1 class="sub-title">Our Services</h1>
-      <div class="services-list">
-        <div>
-          <i class="fa-solid fa-video"></i>
-          <h2>Real-Time Video Surveillance</h2>
-          <p>
-            EagleEye ensures precise real-time video surveillance,
-            enhancing security and enabling swift responses to potential
-            incidents for businesses.
-          </p>
-          <a href="#">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-list-check"></i>
-          <h2>Remote Workforce Management</h2>
-          <p>
-            EagleEye empowers global businesses with remote workforce management,
-            fostering collaboration and productivity across diverse locations.
-          </p>
-          <a href="#">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-chart-line"></i>
-          <h2>Intelligent Analytics for Informed Decision-Making</h2>
-          <p>
-            EagleEye offers insightful analytics for informed decision-making,
-            providing a deeper understanding of workforce patterns, trends,
-            and growth opportunities.
-          </p>
-          <a href="#">Learn more</a>
+    <!-- ----------------About----------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/rsz_eagleeyetech.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Us</h1>
+            <br />
+            <p>
+              Welcome to Eagle Eye Technologies, where innovation converges with
+              global workforce management. In an era of seamless connectivity,
+              Eagle Eye Technologies empowers business owners to monitor and
+              optimize their teams, regardless of geographical boundaries.
+            </p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('mission')"
+              >
+                Our Mission
+              </p>
+              <p
+                class="tab-links"
+                onclick="opentab('vission')"
+              >
+                Our Vision
+              </p>
+              <p
+                class="tab-links"
+                onclick="opentab('uniqueness')"
+              >
+                Our Uniqueness
+              </p>
+              <p
+                class="tab-links"
+                onclick="opentab('reliability')"
+              >
+                Reliability
+              </p>
+            </div>
+            <div
+              class="tab-contents active-tab"
+              id="mission"
+            >
+              <h3 class="h3-blue">Mission Statement</h3>
+              <br />
+              <p>
+                At Eagle Eye Technologies, our mission is to redefine the way
+                businesses connect with their workforce. We strive to provide
+                forward-thinking solutions that transcend borders, offering
+                business owners and managers the tools they need to enhance
+                productivity and drive success.
+              </p>
+            </div>
+            <div
+              class="tab-contents"
+              id="vission"
+            >
+              <h3 class="h3-blue">Who We Are</h3>
+              <br />
+              <p>
+                Eagle Eye Technologies stands as a trailblazing tech company
+                specializing in cutting-edge remote workforce management
+                solutions. Our commitment to simplicity, reliability, and
+                advanced technology ensures that businesses of all sizes can
+                effectively navigate the challenges of modern team management.
+              </p>
+            </div>
+            <div
+              class="tab-contents"
+              id="uniqueness"
+            >
+              <h3 class="h3-blue">What Sets Us Apart</h3>
+              <br />
+              <ul>
+                <li>
+                  <span class="bolden">Global Accessibility:</span> Eagle Eye
+                  Technologies enables business owners to monitor their teams
+                  from anywhere worldwide, fostering collaboration without
+                  limits.
+                </li>
+                <br />
+                <li>
+                  <span class="bolden">Real-Time Insights:</span> Stay ahead
+                  with real-time data and analytics, enabling informed
+                  decision-making on the fly.
+                </li>
+                <br />
+                <li>
+                  <span class="bolden">User-Friendly Interface:</span> Our
+                  intuitive platform ensures that both technical and
+                  non-technical users can navigate effortlessly.
+                </li>
+                <br />
+                <li>
+                  <span class="bolden">Scalability:</span> Whether you're a
+                  startup or a multinational enterprise, Eagle Eye Technologies
+                  provides scalable solutions to meet your evolving business
+                  needs.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="tab-contents"
+              id="reliability"
+            >
+              <h3 class="h3-blue">What Sets Us Apart</h3>
+              <br />
+              <p>
+                Efficient workforce management is at the core of successful
+                businesses. By choosing Eagle Eye Technologies, you're choosing
+                a dedicated partner committed to helping you streamline
+                operations, boost productivity, and navigate the future of work
+                with confidence.
+                <br /><br />
+                Embark on a journey to redefine how you manage your teams.
+                Experience the power of connectivity, efficiency, and innovation
+                with Eagle Eye Technologies.
+                <br /><br />
+                Welcome to the future of workforce management!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-      for (tablink of tablinks){
-        tablink.classList.remove("active-link");
-      }
-      for (tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-    }
-  </script>
+    <!-- -----------------------Services------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-video"></i>
+            <h2>Real-Time Video Surveillance</h2>
+            <p>
+              EagleEye ensures precise real-time video surveillance, enhancing
+              security and enabling swift responses to potential incidents for
+              businesses.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-list-check"></i>
+            <h2>Remote Workforce Management</h2>
+            <p>
+              EagleEye empowers global businesses with remote workforce
+              management, fostering collaboration and productivity across
+              diverse locations.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Intelligent Analytics for Informed Decision-Making</h2>
+            <p>
+              EagleEye offers insightful analytics for informed decision-making,
+              providing a deeper understanding of workforce patterns, trends,
+              and growth opportunities.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------ portfolio --------  -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="images/work-1.png"
+              alt=""
+            />
+            <div class="layer">
+              <h3>Mobile App</h3>
+              <p>
+                We have a mobile App that helps you do your work if you are not
+                with your main computer.
+              </p>
+              <a href="#"><i class="fa-solid fa-mobile-screen"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="images/work-2.png"
+              alt=""
+            />
+            <div class="layer">
+              <h3>Screen Sharing</h3>
+              <p>
+                The app connects you to the workers in your company to
+                collaborate and work together
+              </p>
+              <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="images/work-3.png"
+              alt=""
+            />
+            <div class="layer">
+              <h3>Integration</h3>
+              <p>
+                The app allows you to add other devices for monitoring such as
+                CCtv cameras, digital cameras etc.
+              </p>
+              <a href="#"><i class="fa-solid fa-plug"></i></a>
+            </div>
+          </div>
+        </div>
+        <a
+          href="#"
+          class="btn"
+          >See More</a
+        >
+      </div>
+    </div>
+    <!-- ----------------- Contact ------------------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Us</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> +233 45 456 4545</p>
+            <div class="social-icons">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://x.com"
+                target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              href="images/Kingsley_Fynn_Asaam_CV (1).pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Type Your Message"
+              ></textarea>
+              <button
+                type="submit"
+                class="btn btn2"
+              >
+                Submit
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">&#169; 2024 Kingsley Fynn Asaam</div>
+    </div>
 
-</body>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxovLaM5-AvrHAIYdcwEI9XiZHwS7hw8eOEpcfEfTCK_KzXbK-lf1mxXq1DAyPuzWWX/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfuly";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
