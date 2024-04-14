@@ -7,8 +7,8 @@
 }
 
 :root {
-  --linear-grad: linear-gradient(to right, #141e30, #243b55);
-  --grad-clr1: #141e30;
+  --linear-grad: linear-gradient(to right, #ff004f, #243b55);
+  --grad-clr1: #ff004f;
   --grad-clr2: #243b55;
 }
 
